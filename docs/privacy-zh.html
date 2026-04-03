@@ -1,2 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-Hans"
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SessionScribe - 隐私政策</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #fafafa; padding: 20px; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  h1 { font-size: 28px; color: #1a1a2e; margin-bottom: 8px; }
+  .subtitle { color: #888; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 20px; color: #1a1a2e; margin-top: 28px; margin-bottom: 12px; }
+  p { margin-bottom: 14px; font-size: 15px; }
+  ul { margin: 0 0 14px 24px; }
+  li { margin-bottom: 6px; font-size: 15px; }
+  .highlight { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 14px 18px; border-radius: 6px; margin: 20px 0; font-size: 15px; }
+  .contact { background: #f5f5f5; padding: 16px 18px; border-radius: 8px; margin-top: 24px; }
+  .contact a { color: #1976d2; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>隐私政策</h1>
+<p class="subtitle">SessionScribe &middot; 最后更新：2026年4月2日</p>
+
+<div class="highlight">
+  <strong>核心原则：</strong> SessionScribe完全在您的设备上处理所有音频和转录数据。任何音频、转录文本或个人数据均不会被发送至外部服务器。
+</div>
+
+<h2>1. 我们处理的数据</h2>
+<p>SessionScribe通过设备麦克风录制音频，并使用设备端机器学习模型（WhisperKit和CoreML）将其转换为文本。以下数据在您的设备上本地创建和存储：</p>
+<ul>
+  <li><strong>音频录制</strong> &mdash; 存储在应用沙盒中，直到您将其删除</li>
+  <li><strong>转录文本和说话人标签</strong> &mdash; 存储在应用的本地数据库中</li>
+  <li><strong>会话元数据</strong>（标题、日期、时长、标签） &mdash; 本地存储</li>
+  <li><strong>应用偏好设置</strong>（语言、显示设置、订阅状态） &mdash; 存储在设备的UserDefaults中</li>
+</ul>
+
+<h2>2. 我们不收集的数据</h2>
+<p>作为个人信息处理者，我们不在外部服务器上收集、传输或存储任何数据。具体而言：</p>
+<ul>
+  <li>音频不会被发送至云端</li>
+  <li>转录文本不会离开您的设备</li>
+  <li>不收集任何个人信息</li>
+  <li>不向第三方发送分析数据</li>
+  <li>不使用广告标识符</li>
+  <li>不采用任何追踪技术</li>
+</ul>
+
+<h2>3. 可选的匿名使用统计</h2>
+<p>如果您在设置中启用\"共享匿名使用统计\"，应用会将汇总的使用数据（如会话次数和转录总时长）本地存储在您的设备上。该数据仅用于显示您的个人使用仪表盘，绝不会被传输至任何服务器。</p>
+
+<h2>4. 麦克风与语音识别</h2>
+<p>SessionScribe需要麦克风权限来录制音频。在支持的设备（iOS 26及以上）上，应用还可能使用语音识别权限进行Apple的设备端语音处理。这两项权限仅用于设备端转录。您可以随时在iOS设置中撤销这些权限。</p>
+
+<h2>5. 订阅与购买</h2>
+<p>SessionScribe通过Apple的应用内购买系统提供可选订阅（Plus和Pro）。所有支付处理由Apple完成。我们不会接收、存储或访问您的支付信息。订阅状态通过您设备上的Apple StoreKit框架进行验证。</p>
+
+<h2>6. Face ID / 生物识别认证</h2>
+<p>如果您启用可选的应用锁定功能，SessionScribe将使用Apple的LocalAuthentication框架验证您的身份。生物识别数据（Face ID或Touch ID）完全由iOS处理，应用无法访问。</p>
+
+<h2>7. 数据保留与删除</h2>
+<p>所有数据仅存储在您的设备上。您可以随时在应用内删除单个录音和转录文本。卸载应用将永久删除所有关联数据。</p>
+
+<h2>8. 儿童隐私</h2>
+<p>SessionScribe不面向13岁以下的儿童。我们不会故意收集儿童的任何信息。</p>
+
+<h2>9. 第三方服务</h2>
+<p>SessionScribe不集成任何第三方分析、广告或追踪SDK。唯一的第三方组件是WhisperKit机器学习库，它完全在您的设备上运行。</p>
+
+<h2>10. 本政策的变更</h2>
+<p>我们可能会不时更新本隐私政策。顶部的\"最后更新\"日期表示最新修订时间。在变更后继续使用本应用即表示您同意更新后的政策。</p>
+
+<div class="contact">
+  <strong>联系我们</strong><br>
+  如果您对本隐私政策有任何疑问，请通过以下方式联系我们：<br>
+  <a href=\"mailto:tabular.app@gmail.com\">tabular.app@gmail.com</a>
+</div>
+
+</div>
+</body>
+</html>
