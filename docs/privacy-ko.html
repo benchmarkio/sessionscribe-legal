@@ -1,2 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SessionScribe - 개인정보 처리방침</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #fafafa; padding: 20px; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  h1 { font-size: 28px; color: #1a1a2e; margin-bottom: 8px; }
+  .subtitle { color: #888; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 20px; color: #1a1a2e; margin-top: 28px; margin-bottom: 12px; }
+  p { margin-bottom: 14px; font-size: 15px; }
+  ul { margin: 0 0 14px 24px; }
+  li { margin-bottom: 6px; font-size: 15px; }
+  .highlight { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 14px 18px; border-radius: 6px; margin: 20px 0; font-size: 15px; }
+  .contact { background: #f5f5f5; padding: 16px 18px; border-radius: 8px; margin-top: 24px; }
+  .contact a { color: #1976d2; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>개인정보 처리방침</h1>
+<p class="subtitle">SessionScribe &middot; 최종 업데이트: 2026년 4월 2일</p>
+
+<div class="highlight">
+  <strong>핵심 원칙:</strong> SessionScribe는 모든 오디오 및 전사 데이터를 전적으로 사용자의 기기에서 처리합니다. 오디오, 전사본 또는 개인 데이터가 외부 서버로 전송되는 일은 없습니다.
+</div>
+
+<h2>1. 처리하는 데이터</h2>
+<p>SessionScribe는 기기의 마이크를 통해 오디오를 녹음하고 기기 내 머신러닝 모델(WhisperKit 및 CoreML)을 사용하여 텍스트로 변환합니다. 다음 데이터가 사용자의 기기에 로컬로 생성 및 저장됩니다:</p>
+<ul>
+  <li><strong>오디오 녹음</strong> &mdash; 삭제할 때까지 앱 샌드박스에 저장됩니다</li>
+  <li><strong>전사본 및 화자 라벨</strong> &mdash; 앱의 로컬 데이터베이스에 저장됩니다</li>
+  <li><strong>세션 메타데이터</strong>(제목, 날짜, 길이, 태그) &mdash; 로컬에 저장됩니다</li>
+  <li><strong>앱 환경설정</strong>(언어, 표시 설정, 구독 상태) &mdash; 기기의 UserDefaults에 저장됩니다</li>
+</ul>
+
+<h2>2. 수집하지 않는 데이터</h2>
+<p>개인정보처리자로서 당사는 외부 서버에서 어떠한 데이터도 수집, 전송 또는 저장하지 않습니다. 구체적으로:</p>
+<ul>
+  <li>오디오가 클라우드로 전송되지 않습니다</li>
+  <li>전사본이 기기 밖으로 유출되지 않습니다</li>
+  <li>개인정보를 수집하지 않습니다</li>
+  <li>분석 데이터가 제3자에게 전송되지 않습니다</li>
+  <li>광고 식별자를 사용하지 않습니다</li>
+  <li>추적 기술을 사용하지 않습니다</li>
+</ul>
+
+<h2>3. 선택적 익명 사용 통계</h2>
+<p>설정에서 "익명 사용 통계 공유"를 활성화하면 앱은 집계된 사용 데이터(세션 수, 총 전사 시간 등)를 기기에 로컬로 저장합니다. 이 데이터는 개인 사용 대시보드를 표시하는 데에만 사용됩니다. 어떠한 서버로도 전송되지 않습니다.</p>
+
+<h2>4. 마이크 및 음성 인식</h2>
+<p>SessionScribe는 오디오를 녹음하기 위해 마이크 접근 권한이 필요합니다. 또한 지원되는 기기(iOS 26 이상)에서 Apple의 기기 내 음성 처리를 위해 음성 인식 권한을 사용할 수 있습니다. 두 권한 모두 기기 내 전사에만 사용됩니다. iOS 설정에서 언제든지 이러한 권한을 철회할 수 있습니다.</p>
+
+<h2>5. 구독 및 구매</h2>
+<p>SessionScribe는 Apple의 인앧 구매 시스템을 통해 선택적 구독(Plus 및 Pro)을 제공합니다. 모든 결제 처리는 Apple이 담당합니다. 당사는 사용자의 결제 정보를 수신, 저장 또는 접근하지 않습니다. 구독 상태는 기기에서 Apple의 StoreKit 프레임워크를 통해 확인됩니다.</p>
+
+<h2>6. Face ID / 생체 인증</h2>
+<p>선택적 앱 잠금 기능을 활성화하면 SessionScribe는 Apple의 LocalAuthentication 프레임워크를 사용하여 본인 확인을 수행합니다. 생체 데이터(Face ID 또는 Touch ID)는 전적으로 iOS에서 처리되며 앱에서 접근할 수 없습니다.</p>
+
+<h2>7. 데이터 보존 및 삭제</h2>
+<p>모든 데이터는 사용자의 기기에만 저장됩니다. 앱 내에서 언제든지 개별 녹음 및 전사본을 삭제할 수 있습니다. 앱을 삭제하면 관련된 모든 데이터가 영구적으로 제거됩니다.</p>
+
+<h2>8. 아동의 개인정보 보호</h2>
+<p>SessionScribe는 13세 미만의 아동을 대상으로 하지 않습니다. 아동으로부터 고의로 정보를 수집하지 않습니다.</p>
+
+<h2>9. 제3자 서비스</h2>
+<p>SessionScribe는 제3자 분석, 광고 또는 추적 SDK를 일체 통합하지 않습니다. 유일한 제3자 구성 요소는 WhisperKit 머신러닝 라이브러리이며, 전적으로 사용자의 기기에서 실행됩니다.</p>
+
+<h2>10. 본 방침의 변경</h2>
+<p>당사는 본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 최신 개정일은 상단의 "최종 업데이트" 날짜에 표시됩니다. 변경 후 앱을 계속 사용하는 것은 업데이트된 방침에 대한 동의로 간주됩니다.</p>
+
+<div class="contact">
+  <strong>문의</strong><br>
+  본 개인정보 처리방침에 대한 질문이 있으면 아래로 연락해 주세요:<br>
+  <a href="mailto:tabular.app@gmail.com">tabular.app@gmail.com</a>
+</div>
+
+</div>
+</body>
+</html>
